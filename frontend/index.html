@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel = "stylesheet" href = "style.css">
+        <title>Chef Bot</title>
+    </head>
+    <body>
+        <div class = "chat-container">
+            <div class = "chat-header">
+                <span class = "icon">🍳</span>
+                <div>
+                    <h2>Chef Bot</h2>
+                    <p>Your Personal Recipe Assistant</p>
+                </div>
+            </div>
+
+            <div class = "chat-box" id = "chat-box">
+                <div class = "message bot">
+                    Hello! I'm Chef Bot. Ask me for any recipe and I'll guide you step by step!
+                </div>
+            </div>
+
+            <div class = "quick-replies">
+                <button onclick = "sendMessage('Give me a pasta recipe')">Give me a pasta recipe</button>
+                <button onclick = "sendMessage('How do I make chicken?')">How do I make chicken?</button>
+                <button onclick = "sendMessage('I want a soup recipe')">I want a soup recipe</button>
+            </div>
+
+            <div class = "input-area">
+                <input type = "text" id = "user-input" placeholder = "Ask for a recipe...">
+                <button onclick = "handleSend()">➤</button>
+            </div>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>
